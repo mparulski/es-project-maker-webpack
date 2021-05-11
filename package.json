@@ -1,0 +1,24 @@
+{
+  "name": "@mparulski/es-project-maker-webpack",
+  "version": "0.0.1-alpha.1",
+  "description": "Common scripts for projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mparulski/es-project-maker-webpack.git"
+  },
+  "author": "Michal Parulski <michal.parulski@gmail.com>, Jan Latoch <jan.latoch@gmail.com>",
+  "contributors": [
+    "Jan Latoch <jan.latoch@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mparulski/es-project-maker-webpack/issues"
+  },
+  "homepage": "https://github.com/mparulski/es-project-maker-webpack#readme",
+  "dependencies": {
+  },
+}
