@@ -4,7 +4,7 @@ module.exports = {
   devtool: 'eval-source-map',
   devServer: {
     host: 'localhost',
-    hot: true,
+    hot: 'only',
     port: 9000,
   },
   module: {
