@@ -8,20 +8,27 @@ module.exports = {
     rules: [
       {
         test: /\.js$|\.jsx$/,
-        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
         },
+        exclude: /node_modules/,
       },
       {
-        test: /\.tsx?$/,
-        use: 'ts-loader',
+        test: /\.ts$|\.tsx$/,
+        use: [
+          {
+            loader: 'babel-loader',
+          },
+          {
+            loader: 'ts-loader',
+          },
+        ],
         exclude: /node_modules/,
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif|woff|eot|ttf)$/i,
         type: 'asset/resource',
-      }
+      },
     ],
   },
   plugins: [
