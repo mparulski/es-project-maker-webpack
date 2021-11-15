@@ -1,3 +1,15 @@
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+
+const getPlugins = () => {
+  const plugins = []
+
+  if (process.env.npm_config_enableBundleAnalyzer) {
+    plugins.push(new BundleAnalyzerPlugin())
+  }
+
+  return plugins
+}
+
 module.exports = {
   target: 'web',
   mode: 'production',
@@ -32,4 +44,5 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
+  plugins: getPlugins(),
 }
